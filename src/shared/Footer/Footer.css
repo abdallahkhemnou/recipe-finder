@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  color: #2D5A4B;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.footer .right {
+  display: flex;
+  gap: 15px;
+}
+.footer p {
+  margin-left: 10px;
+}
