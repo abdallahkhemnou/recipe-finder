@@ -7,7 +7,9 @@ import manCooking from '../../assets/man-cooking.avif'
 import { GiCarrot } from 'react-icons/gi'
 import { FaBolt } from 'react-icons/fa'
 import { FaSearch } from 'react-icons/fa'
+import { useNavigate } from "react-router-dom";
 function Home() { 
+  const navigate = useNavigate();
   return (
     <>
       <Header />
@@ -16,7 +18,10 @@ function Home() {
           <h1><span>Healthy</span> meals, zero fuss</h1>
           <p>Discover eight quick, whole-food recipes that you can tonight</p>
           <p id='pusher'>-no processed junk, no guesswork</p>
-          <button>Start exploring</button>
+          <button onClick={ () =>
+             navigate("/recipes")
+            }
+          >Start exploring</button>
         </section>
         <section className="picture">
           <img className="wave-bg-left" src={wave} />

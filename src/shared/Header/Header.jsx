@@ -1,7 +1,9 @@
 import './Header.css'
 import logo from '../../assets/logo.png'
 import { NavLink } from 'react-router-dom'
-function Header () {
+import { useNavigate } from "react-router-dom";
+function Header() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="header">
@@ -14,7 +16,11 @@ function Header () {
           <NavLink to="/recipes">Recipes</NavLink>
           <NavLink to="/about">About</NavLink>
         </div>
-        <button id="browse-recipes">Browse Recipes</button>
+        <button id="browse-recipes"
+         onClick={() => 
+           navigate('/recipes')
+         }
+        >Browse Recipes</button>
       </div>
     </>
   )
