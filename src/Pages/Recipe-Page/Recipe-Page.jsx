@@ -3,9 +3,11 @@ import Header from "../../shared/Header/Header";
 import Footer from "../../shared/Footer/Footer";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { FaUser, FaClock, FaUtensils } from 'react-icons/fa';
 function RecipePage() {
+  const navigate = useNavigate();
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
   const [maxPrep, setMaxPrep] = useState('');
@@ -70,7 +72,7 @@ function RecipePage() {
                 <p><FaClock /> prep : {recipe.preparationMinutes > 0 ? `${recipe.preparationMinutes} mins` : 'N/A'}</p>
               </div>
               <p><FaUtensils /> cook : {recipe.cookingMinutes} min</p>
-              <button>View Recipe</button>
+              <button onClick={() => navigate(`/recipe-detail/${recipe.id}`)}>View Recipe</button>
             </div>
           ))}
         </section>

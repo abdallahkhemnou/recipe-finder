@@ -1,0 +1,128 @@
+.hero-about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  color: #2D5A4B;
+  margin-top: 40px;
+}
+.hero-about h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+.hero-about p {
+  margin: 0;
+  width: 40%;
+  text-align: center;
+  line-height: 25px;
+}
+.features {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 20px;
+  width: 90%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  justify-content: center;
+  margin-left: 60px;
+} 
+.features .feature-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height:350px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.feature-container p {
+  text-align: center;
+  line-height: 25px;
+}
+.feature-container span {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #eef8f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #0d5c4d;
+  margin: 0 auto 20px;
+  margin-top: 50px;
+}
+.feature-container h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #143c36;
+  margin-bottom: 12px;
+}
+.green {
+  display: flex;
+  flex-direction: row;
+  width: 77%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  background-color: #0d5c4d;
+  gap: 40px;
+  height: 230px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.talk {
+  display: flex;
+  flex-direction: column;
+  gap: 10;
+}
+.talk p, h1, button{
+  margin: 0;
+}
+.talk h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+.talk p {
+  width: 80%;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #d7e7e2;
+  margin: 0;
+}
+#last {
+  background: #ffffff;
+  color: #0d5c4d;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 180px;
+  margin-top: 20px;
+}
+button:hover {
+  background: #f2f2f2;
+}
+.icon-circle {
+  width: 120px;
+  height: 120px;
+  background: #eef8f2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 140px;
+}
+.icon-circle svg {
+  font-size: 2.8rem;
+  color: #0d5c4d;
+}
