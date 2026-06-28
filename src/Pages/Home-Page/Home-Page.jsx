@@ -28,9 +28,9 @@ function Home() {
           <img className="wave-bg-right" src={wave} />
           <img src={manCooking} />
         </section>
-        <section className="adds">
+        <section className="adds-unic">
           <h1>What you'll get</h1>
-          <div className='adds-container'>
+          <div className='adds-container-unic'>
             <div className='topic'>
               <div className="icon-badge orange"><GiCarrot /></div>
               <h2>Whole food recipes</h2>

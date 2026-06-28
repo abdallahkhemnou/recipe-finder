@@ -8,21 +8,6 @@
   height: auto;
   color: #2D5A4B;
 }
-.adds {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 80%;
-  height: auto;
-}
-.adds .adds-caontainer {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  width: 15%;
-  height: auto;
-}
 .motivation {
   display: flex;
   flex-direction: row;
@@ -64,24 +49,11 @@
 }
 .motivation img {
   flex: 1;
-  width: 100%;
   border-radius: 15px;
   object-fit: cover;
   width: 600px;
   height: 400px;
 }
-.end {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #e0ebe7;
-  border-radius: 15px;
-  width: 80%;
-  margin: 40px auto;
-  padding: 60px 40px;
-  gap: 20px;
-} 
 .hero button {
   background-color: #2D5A4B;
   border: none;
@@ -149,37 +121,41 @@
   height: 800px;
   transform: rotate(-140deg);
 }
-.adds {
+.adds-unic {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
-  justify-self: center;
-  margin-top: 60px;
+  width: 80%;
+  margin: 60px auto 0 auto;
   font-size: 20px;
 }
-.adds-container {
+.adds-container-unic {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 15px;
   margin-top: 20px;
+  width: 100%;
 }
-.adds h1{
+.adds-unic h1 {
   margin: 0;
   color: #2D5A4B;
 }
-.adds-container .topic {
+.adds-container-unic .topic {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex: 1;
+  align-items: flex-start;
 }
-.topic h2,p {
+.topic h2, p {
   color: #2D5A4B;
   margin: 0;
 }
 .icon-badge {
-  width: 40px;
-  height: 40px;
+  width: 40px !important;
+  height: 40px !important;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -193,6 +169,9 @@
 .icon-badge.green { 
   background-color: #d6ece4; 
   color: #2D5A4B; 
+  margin-left: -10px;
+  border-radius: 10px;
+  margin-bottom: 0;
 }
 .icon-badge.purple { 
   background-color: #e3e0f7; 
